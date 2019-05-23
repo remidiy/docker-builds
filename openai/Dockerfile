@@ -1,4 +1,4 @@
-FROM nvidia/cuda:10.0-base
+FROM tensorflow/tensorflow:2.0.0a0-gpu-py3
 
 MAINTAINER remidi "yashwanthremidi@gmail.com"
 
