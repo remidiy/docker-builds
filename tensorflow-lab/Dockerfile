@@ -10,7 +10,7 @@ WORKDIR /project
 
 EXPOSE 8888
 
-CMD [ "jupyter", "lab", "--config", "/jupyter_notebook_config.py", "--no-browser"]
+CMD [ "jupyter", "lab", "--config", "/jupyter_notebook_config.py", "--no-browser", "--allow-root"]
 
 
 
