@@ -6,6 +6,7 @@ COPY requirements.txt requirements.txt
 RUN pip3 install -r requirements.txt
 
 COPY jupyter_notebook_config.py jupyter_notebook_config.py
+COPY jupyter_settings/.jupyter .jupyter
 WORKDIR /project
 
 EXPOSE 8888
