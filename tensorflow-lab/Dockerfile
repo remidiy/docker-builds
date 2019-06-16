@@ -9,16 +9,16 @@ RUN apt-get install nodejs -y && apt-get install npm -y
 
 COPY jupyter_notebook_config.py jupyter_notebook_config.py
 
-RUN jupyter labextension install @jupyterlab/git && \
-    jupyter labextension install @jupyterlab/google-drive && \
-    jupyter labextension install @jupyterlab/vega4-extension && \
-    jupyter labextension install @jupyterlab/plotly-extension && \
-    jupyter labextension install @jupyterlab/geojson-extension && \
-    jupyter labextension install jupyterlab-drawio && \
-    jupyter labextension install @jupyterlab/latex && \
-    jupyter labextension install @jupyterlab/github && \
-    jupyter labextension install @oriolmirosa/jupyterlab_materialdarker && \
-    jupyter labextension install @telamonian/theme-darcula
+RUN jupyter labextension install @jupyterlab/git \
+    @jupyterlab/google-drive \
+    @jupyterlab/vega4-extension \
+    @jupyterlab/plotly-extension \
+    @jupyterlab/geojson-extension \
+    jupyterlab-drawio \
+    @jupyterlab/latex \
+    @jupyterlab/github \
+    @oriolmirosa/jupyterlab_materialdarker \
+    @telamonian/theme-darcula
 
 
 WORKDIR /project
