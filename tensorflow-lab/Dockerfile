@@ -18,8 +18,7 @@ RUN jupyter labextension install @jupyterlab/git && \
     jupyter labextension install @jupyterlab/latex && \
     jupyter labextension install @jupyterlab/github && \
     jupyter labextension install @oriolmirosa/jupyterlab_materialdarker && \
-    jupyter labextension install @telamonian/theme-darcula && \
-    jupyter labextension install @jupyterlab/jupyterlab-mp4
+    jupyter labextension install @telamonian/theme-darcula
 
 
 WORKDIR /project
