@@ -5,15 +5,15 @@ LABEL author="yashwanthremidi@gmail.com"
 COPY requirements.txt requirements.txt
 RUN pip3 install -r requirements.txt
 
+RUN apt-get install nodejs -y && apt-get install npm -y 
+
 COPY jupyter_notebook_config.py jupyter_notebook_config.py
 COPY jupyter_settings/.jupyter .jupyter
 WORKDIR /project
 
 EXPOSE 8888
 
-RUN apt-get install nodejs -y && apt-get install npm -y 
-
-CMD [ "jupyter", "lab", "--config", "/jupyter_notebook_config.py", "--no-browser", "--allow-root"]
+CMD [ "jupyter", "lab", "--no-browser", "--allow-root"]
 
 
 

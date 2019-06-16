@@ -1,8 +1,0 @@
-{
-  "NotebookApp": {
-    "password": "sha1:c550fbc7be41:99da3671f2f608a8306202309cf70e43f3790273",
-    "nbserver_extensions": {
-      "jupyterlab_discovery": true
-    }
-  }
-}
